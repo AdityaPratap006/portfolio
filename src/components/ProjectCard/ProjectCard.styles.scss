@@ -1,0 +1,121 @@
+.project-card{
+    width:21rem;
+    height: 25rem;
+    //border:1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    //justify-content: flex-start;
+    align-items: flex-end;
+    border-radius: 30px;
+    overflow: hidden;
+    z-index: 20;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    .project-link{
+        position: absolute !important;
+        top:6px;
+        right:10px;
+        background: #222;
+        color:#fff;
+        font-size: 24px;
+        border:1px solid #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        z-index: 50;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    .project-images{
+        width:100%;
+        height: 50%;
+        z-index: 30;
+        padding: 0;
+        
+        .project-image-slider{
+            width:100%;
+            height: 80%;
+            
+          
+          
+            
+            .image{
+                width:100%;
+                height:100%;
+                
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                
+                img{
+                    width:100%;
+                    height:100%;
+                }
+            }
+        }
+
+        
+
+    }
+
+    .project-description{
+        width:97%;
+        height: 50%;
+         
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        h4{
+            margin: 3px 0 3px 0;
+            font-size: 1.4rem;
+             
+            color:#fff;
+            font-family: 'Happy Monkey', cursive;
+        }
+
+        h5{
+            margin:5px 0 10px 0;
+            font-size: 1rem;
+             
+            color:#fff;
+            font-family: 'Happy Monkey', cursive;
+        }
+        h6{
+            margin:5px 0 10px 0;
+            font-size: 0.9rem;
+             
+            color:#fff;
+            font-family: 'Happy Monkey', cursive;
+        }
+
+
+        .tech-stack{
+            width:100%;
+            height: 60%;
+             
+
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+
+
+        }
+    }
+}

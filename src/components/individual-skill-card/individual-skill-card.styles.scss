@@ -1,0 +1,88 @@
+.individual-skill-card{
+    margin-top: 1rem;
+    width:6rem;
+    height:6.4rem;
+    margin:3px;
+    border-radius: 20px;
+    perspective: 1000px;
+    z-index: 20;
+    .individual-skill-card-inner{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+        z-index: 20;
+
+       
+    }
+
+    &:hover{
+
+        cursor: pointer;
+        .individual-skill-card-inner{
+            transform: rotateY(180deg);
+        }
+    }
+
+
+    .individual-skill-card-front{
+        position: absolute;
+        backface-visibility: hidden;
+        width:6rem;
+        height:6.4rem;
+        margin:3px;
+        border-radius: 20px;
+        background: #ECE9E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        z-index: 20;
+        padding-top:5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+          
+    
+        .skill-score{
+            width:4.5rem;
+            height: 4.5rem;
+            margin-bottom: 4px;
+            
+        }
+    
+        p{
+            margin: 3px auto 3px auto;
+            color: purple;
+            font-family: 'Happy Monkey', cursive;
+            font-weight: 600;
+        }
+    }
+
+    .individual-skill-card-back{
+        position: absolute;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        width:6rem;
+        height:6.4rem;
+        margin:3px;
+        border-radius: 20px;
+        background: #ECE9E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        z-index: 20;
+        padding-top:5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        img{
+            max-height: 4.5rem;
+            max-width: 5.7rem;
+        }
+    }
+}
+

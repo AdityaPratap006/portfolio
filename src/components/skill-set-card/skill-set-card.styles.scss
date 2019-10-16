@@ -1,0 +1,46 @@
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+
+.skill-set-card{
+    width:100%;
+    height: 100%;
+    //background:purple;  /* fallback for old browsers */
+ 
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 40;
+    
+    h4{
+        font-family: 'Happy Monkey', cursive;
+        font-size: 1.1rem;
+        color:#fff;
+    }
+
+    .skill-list-container{
+
+        width:100%;
+        height:72%;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+       
+    }
+}

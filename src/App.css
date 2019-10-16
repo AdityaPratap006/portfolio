@@ -1,22 +1,28 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Lemon|Happy+Monkey&display=swap');
+
+.App{
+    width:100vw;
+    max-width: 100%;
+    height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
+
+.full-page-slide{
+    height:100vh;
+    width: 100vw;
+    max-width: 100%;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/* .double{
+    height: 200vh !important;
+} */
 
-.App-link {
-  color: #09d3ac;
+.particles-background{
+    position: fixed;
+    top:0;
+    width: 100vw;
+    height:100vh;
+    max-width: 100%;
+    z-index: 1;
 }

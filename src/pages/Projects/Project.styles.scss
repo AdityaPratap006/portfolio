@@ -1,0 +1,33 @@
+.project-page{
+    height: 100%;
+    width: 100%;
+    background: #005C97;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: flex-start;
+
+    h2{
+        font-size: 2rem;
+        color:#fff;
+        font-family: "Lemon", cursive;
+        margin:0 0 0 34vw;
+    }
+
+    .projects-container{
+        width:78rem;
+        height: 81vh;
+        margin-left: 1rem;
+         
+        padding: 1rem;
+         
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
